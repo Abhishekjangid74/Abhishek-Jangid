@@ -7,17 +7,21 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/Style.css" />
-    <!-- <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+    <link
       rel="stylesheet"
-    /> -->
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
   </head>
-  <body>
+  <body class="test">
     <div class="overlay"></div>
     <video playsinline autoplay muted loop poster="">
       <source src="image/background-video.mp4" type="" />
@@ -36,13 +40,44 @@
                 <li><a href="#about-me">About Me</a></li>
                 <li><a href="#resume">Resume</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="tel:9352796534">Contact</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
               </ul>
             </nav>
+            <div class="mobile-menu-icon">
+              <ul>
+                <li><span></span></li>
+                <li><span></span></li>
+                <li><span></span></li>
+              </ul>
+            </div>
           </div>
         </main>
       </header>
+      <div class="mobile-bg">
+        <div class="profile-main">
+          <div class="profile">
+            <div class="profile-left">
+              <img src="./image/profile.jpeg" alt="abhishek jangid">
+            </div>
+            <div class="profile-right">
+              <h3>Abhishek Jangid</h3>
+              <h5>Front End Developer</h5>
+            </div>
+          </div>
+          <div class="close">
+            <i class="fa-solid fa-angles-left"></i>
+          </div>
+        </div>
+        <ul class="mobile-menu">
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
       <!--Header End-->
       <main class="container">
         <section class="slider" id="home">
@@ -58,7 +93,7 @@
               a front end developer with a good grasp of HTML, CSS, and
               JavaScript. Discover how I bring unique design concepts to life,
               ensuring that every website I make represents innovation and
-              excellence.Discover how I bring unique design concepts to life,
+              excellence. Discover how I bring unique design concepts to life,
               ensuring that every website I make represents innovation and
               excellence.
             </p>
@@ -83,7 +118,7 @@
           <div class="dot"></div>
         </div>
 
-        <div class="about-me">
+        <section class="about-me">
           <div class="about-me-left"></div>
           <div class="about-me-right">
             <h3>I can develop that help people</h3>
@@ -107,7 +142,7 @@
             </div>
             <a href="#">Download CV</a>
           </div>
-        </div>
+        </section>
         <!-- About Us End-->
 
         <!--Resume Start-->
@@ -117,7 +152,7 @@
           <div class="dot"></div>
         </div>
 
-        <div class="tab">
+        <section class="tab">
           <button
             class="tablinks"
             onclick="openCity(event, 'Introduction')"
@@ -134,9 +169,9 @@
           <button class="tablinks" onclick="openCity(event, 'Experience')">
             Experience - 04
           </button>
-        </div>
+        </section>
 
-        <div id="Introduction" class="tabcontent">
+        <section id="Introduction" class="tabcontent">
           <div class="introduction">
             <ul>
               <li>
@@ -153,7 +188,7 @@
               </li>
               <li>
                 <h6>Address</h6>
-                <p>Sanganer Jaipur, Rajasthan</p>
+                <p>Jaipur, Rajasthan</p>
               </li>
               <li>
                 <h6>Email</h6>
@@ -183,9 +218,9 @@
               </li>
             </ul>
           </div>
-        </div>
+        </section>
 
-        <div id="Skills" class="tabcontent">
+        <section id="Skills" class="tabcontent">
           <div class="skills">
             <ul>
               <li class="skill-card">
@@ -237,9 +272,9 @@
               </li>
             </ul>
           </div>
-        </div>
+        </section>
 
-        <div id="Education" class="tabcontent">
+        <section id="Education" class="tabcontent">
           <div class="education">
             <ul>
               <li>
@@ -264,9 +299,9 @@
               </li>
             </ul>
           </div>
-        </div>
+        </section>
 
-        <div id="Experience" class="tabcontent">
+        <section id="Experience" class="tabcontent">
           <div class="education">
             <ul>
               <li>
@@ -291,11 +326,11 @@
               </li>
             </ul>
           </div>
-        </div>
+        </section>
         <!-- Resume End -->
 
         <!--counter Start-->
-        <div class="counter">
+        <section class="counter">
           <ul>
             <li>
               <h4>1<strong>+</strong></h4>
@@ -314,8 +349,7 @@
               <p>Experience</p>
             </li>
           </ul>
-
-        </div>
+        </section>
         <!--counter End-->
 
         <!-- Portfolio Start -->
@@ -325,8 +359,24 @@
           <div class="dot"></div>
         </div>
 
-        <div class="portfolio">
+        <section class="portfolio">
           <ul>
+            <li>
+              <img src="image/portfolio-1.jpeg" alt="" />
+              <div class="portfolio-details">
+                <h6>Motivational Reels Bundle</h6>
+                <h3>Ai Bundle</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab
+                  repellat aperiam corporis optio exercitationem, vel, beatae
+                  assumenda commodi consequatur
+                </p>
+                <a href="#"
+                  >Read More
+                  <i class="fa-solid fa-arrow-up-right-from-square fa-fade"></i
+                ></a>
+              </div>
+            </li>
             <li>
               <img src="image/portfolio-1.jpeg" alt="" />
               <div class="portfolio-details">
@@ -376,13 +426,286 @@
               </div>
             </li>
           </ul>
-        </div>
-
+        </section>
         <!-- Portfolio End -->
+        <!--Testimonials Start-->
+        <div class="heading" id="testimonials">
+          <h2>TESTIMONIALS</h2>
+          <h3>Testimonials</h3>
+          <div class="dot"></div>
+        </div>
+        <section class="testimonial">
+          <ul>
+            <li>
+              <!-- <div class="testimonial-bg"> -->
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptate eligendi illum, modi in tempore eum, cumque debitis
+                ratione deleniti libero ducimus pariatur repellendus? Ex eum
+                necessitatibus ullam dignissimos officia nisi?
+              </p>
+              <!-- </div> -->
+              <div class="testimonial-details">
+                <div class="testimonial-details-right">
+                  <img src="./image/testimonial-1.jpeg" alt="" />
+                </div>
+                <div class="testimonial-details-left">
+                  <h4>Abhishek</h4>
+                  <h6>Developer</h6>
+                </div>
+              </div>
+            </li>
+            <li>
+              <!-- <div class="testimonial-bg"> -->
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptate eligendi illum, modi in tempore eum, cumque debitis
+                ratione deleniti libero ducimus pariatur repellendus? Ex eum
+                necessitatibus ullam dignissimos officia nisi?
+              </p>
+              <!-- </div> -->
+              <div class="testimonial-details">
+                <div class="testimonial-details-right">
+                  <img src="./image/testimonial-1.jpeg" alt="" />
+                </div>
+                <div class="testimonial-details-left">
+                  <h4>Name</h4>
+                  <h6>Work</h6>
+                </div>
+              </div>
+            </li>
+            <li>
+              <!-- <div class="testimonial-bg"> -->
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptate eligendi illum, modi in tempore eum, cumque debitis
+                ratione deleniti libero ducimus pariatur repellendus? Ex eum
+                necessitatibus ullam dignissimos officia nisi?
+              </p>
+              <!-- </div> -->
+              <div class="testimonial-details">
+                <div class="testimonial-details-right">
+                  <img src="./image/testimonial-1.jpeg" alt="" />
+                </div>
+                <div class="testimonial-details-left">
+                  <h4>Name</h4>
+                  <h6>Work</h6>
+                </div>
+              </div>
+            </li>
+            <li>
+              <!-- <div class="testimonial-bg"> -->
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Voluptate eligendi illum, modi in tempore eum, cumque debitis
+                ratione deleniti libero ducimus pariatur repellendus? Ex eum
+                necessitatibus ullam dignissimos officia nisi?
+              </p>
+              <!-- </div> -->
+              <div class="testimonial-details">
+                <div class="testimonial-details-right">
+                  <img src="./image/testimonial-1.jpeg" alt="" />
+                </div>
+                <div class="testimonial-details-left">
+                  <h4>Name</h4>
+                  <h6>Work</h6>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <!--Testimonials End-->
+        <!--Contact Us Satrt-->
+        <div class="heading" id="contact">
+          <h2>CONTACT US</h2>
+          <h3>Contact Us</h3>
+          <div class="dot"></div>
+        </div>
+        <section class="contact-us">
+          <div class="contact-us-left">
+            <div class="input-name">
+              <label>First Name <span>*</span></label>
+              <input type="text" placeholder="Enter Your First Name" />
+            </div>
+
+            <div class="input-name">
+              <label>Last Name <span>*</span></label>
+              <input type="text" placeholder="Enter Your Last Name" />
+            </div>
+
+            <div class="input-name">
+              <label>Email <span>*</span></label>
+              <input type="email" placeholder="Enter Your Email" />
+            </div>
+
+            <div class="input-name">
+              <label>Phone Number <span>*</span></label>
+              <input type="number" placeholder="Enter Your phone Number" />
+            </div>
+
+            <div class="textarea">
+              <label>Message <span>*</span></label>
+              <textarea placeholder="Enter Your Message"></textarea>
+            </div>
+
+            <div class="submit-btn">
+              <button type="button">Submit</button>
+            </div>
+          </div>
+          <div class="contact-us-right">
+            <ul>
+              <li>
+                <div class="contact-icon">
+                  <i class="fa-solid fa-phone-volume"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Phone:</h4>
+                  <p><a href="tel:+91 9352796534">+91 9352796534</a></p>
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon">
+                  <i class="fa-solid fa-envelope-open-text"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Email:</h4>
+                  <p>
+                    <a href="mailto:abhijangir74@gmail.com"
+                      >abhijangir74@gmail.com</a
+                    >
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Address:</h4>
+                  <p>Sanganer, Jaipur, Rjasthan</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
       </main>
+      <!--Contact Us End-->
+      <!--Footer Start-->
+      <footer class="footer-bg">
+        <main class="container">
+          <div class="footer">
+            <div class="footer-left">
+              <a href="#home"><img src="./image/logo.png" alt="" /></a>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                doloremque, beatae sequi, voluptates repellendus laboriosam
+                dolorem
+              </p>
+              <div class="social-media-icon">
+                <h3>Social Media</h3>
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/abhishekjangid613/"
+                      target="_blank"
+                      ><img src="./image/instagram.png" alt="instagram"
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/profile.php?id=100068633440296"
+                      target="_blank"
+                      ><img src="./image/facebook.png" alt="facebook"
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/abhishek-jangid-front-end-developer"
+                      target="_blank"
+                      ><img src="./image/linkedin.png" alt="linkedin"
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://twitter.com/AbhishekJa28446"
+                      target="_blank"
+                      ><img src="./image/twitter.png" alt="twitter"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-menu">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+              </ul>
+            </div>
+            <div class="footer-right">
+              <h3>Contact Info</h3>
+              <ul>
+                <li>
+                  <div class="contact-icon">
+                    <i class="fa-solid fa-phone-volume"></i>
+                  </div>
+                  <div class="contact-details">
+                    <h4>Phone:</h4>
+                    <p><a href="tel:+91 9352796534">+91 9352796534</a></p>
+                  </div>
+                </li>
+                <li>
+                  <div class="contact-icon">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+                  </div>
+                  <div class="contact-details">
+                    <h4>Email:</h4>
+                    <p>
+                      <a href="mailto:abhijangir74@gmail.com"
+                        >abhijangir74@gmail.com</a
+                      >
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="contact-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div class="contact-details">
+                    <h4>Address:</h4>
+                    <p>Sanganer, Jaipur, Rjasthan</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </main>
+      </footer>
+      <section class="copyright-bg">
+        <main class="container">
+          <div class="copyright">
+            <div class="copyright-left">
+              <p>© Copyright 2023 Abhishek Jangid</p>
+            </div>
+            <div class="copyright-right">
+              <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+        </main>
+      </section>
+      <!--Footer End-->
     </div>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script> -->
+
     <script src="js/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script> -->
     <script src="js/custom.js"></script>
   </body>
 </html>

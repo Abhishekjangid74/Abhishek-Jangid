@@ -4,6 +4,14 @@ $(document).ready(function(){
     $('li a').removeClass("active");
     $(this).addClass("active");
 });
+$(".mobile-menu-icon").click(function () {
+  $(".mobile-bg").toggle("slide-right, 500");
+  // $(".test").toggle("overflow","hidden");
+});
+$(".close").click(function () {
+  $(".mobile-bg").toggle("slide-right, 500");
+  // $(".test").toggle("overflow","auto");
+});
 });
 // Menu Active End
 
@@ -83,8 +91,68 @@ $('a[href*="#"]').on('click', function (e) {
 });
 // Scroll Slider mouse button End
 
+// Portfolio Start
+$(document).ready(function(){
+  $(".portfolio ul").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
 
-// About Me Introduction End
+}); 
+// Portfolio End
+
+// testimonial Start
+$(document).ready(function(){
+  $(".testimonial ul").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false,
+    dots: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+
+});
+// testimonial End
+
+
+// Resume Start
 
 function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
@@ -101,7 +169,8 @@ function openCity(evt, cityName) {
 }
 document.getElementById("defaultOpen").click();
 
-// About Me Introduction End
+// Resume End
+
 
 // Cursor Shape Start
 // document.addEventListener("DOMContentLoaded", function(){
